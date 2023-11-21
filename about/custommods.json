@@ -1,0 +1,16 @@
+{
+"CustomMods":[
+  {"Name":"YTTV-Checker", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/YTTV-Checker.dll"}
+  {"Name":"YizziCamModV2", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/YizziCamModV2.dll"}
+  {"Name":"ColourMod", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/ColourMod.dll"}
+  {"Name":"Cosmetx", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Cosmetx.dll"}
+  {"Name":"GorillaShirts", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/GorillaShirts.dll"}
+  {"Name":"DevBlinkMod", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/DevBlinkMod.dll"}
+  {"Name":"ImprovedComputer", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/ImprovedComputer.dll"}
+  {"Name":"ShibaGTDARK", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/ShibaGTDARK.dll"}
+  {"Name":"Skybox", "Type":"zip", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Skybox.zip"}
+  {"Name":"Tails", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Tails.dll"}
+  {"Name":"UnityExplorer", "Type":"zip", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/UnityExplorer.zip"}
+  {"Name":"WardrobeEnhancements", "Type":"dll", "link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/WardrobeEnhancements.dll"}
+]
+}
