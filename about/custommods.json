@@ -8,7 +8,7 @@
   {"Name":"DevBlinkMod", "Type":"dll", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/DevBlinkMod.dll"},
   {"Name":"ImprovedComputer", "Type":"dll", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/ImprovedComputer.dll"},
   {"Name":"ShibaGTDARK", "Type":"dll", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/ShibaGTDARK.dll"},
-  {"Name":"Skybox", "Type":"zip", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Skybox.zip"},
+  {"Name":"Skybox", "Type":"zip", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Skybox/SkyboxChanger.dll", "Link2":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Skybox/R%20(1).jpeg"},
   {"Name":"Tails", "Type":"dll", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/Tails.dll"},
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/UnityExplorer.zip"},
   {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://github.com/hollowvr/hollowvr.github.io/blob/main/mods/WardrobeEnhancements.dll"}
