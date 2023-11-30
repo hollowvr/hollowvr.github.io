@@ -11,7 +11,7 @@
   {"Name":"Skybox", "Type":"zip", "Link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll"},
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"},
+  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"}
 ],
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
@@ -20,6 +20,6 @@
   {"name" : "Computer Interface", "tag" : "", "gitPath" : "ToniMacaroni/ComputerInterface", "releaseId" : 0, "dependencies" : [1]},
   {"name" : "Extenject", "tag" : "", "gitPath" : "Auros/Bepinject", "releaseId" : 1},
   {"name" : "HoneyLib", "tag" : "", "gitPath" : "BzzzThe18th/HoneyLib", "releaseId" : 0},
-  {"name" : "TMPLoader", "tag" : "", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0},
+  {"name" : "TMPLoader", "tag" : "", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0}
 ]
 }
