@@ -16,8 +16,8 @@
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
   {"name" : "Utilla", "tag" : "", "gitPath" : "legoandmars/Utilla", "releaseId" : 0},
-  {"name" : "Bepinject", "tag" : "", "gitPath" : "Auros/Bepinject", "releaseId" : 0, "dependencies": ["dependency": 3]},
-  {"name" : "Computer Interface", "tag" : "", "gitPath" : "ToniMacaroni/ComputerInterface", "releaseId" : 0, "dependencies": ["dependency": 1]},
+  {"name" : "Bepinject", "tag" : "", "gitPath" : "Auros/Bepinject", "releaseId" : 0, "dependencies": 3},
+  {"name" : "Computer Interface", "tag" : "", "gitPath" : "ToniMacaroni/ComputerInterface", "releaseId" : 0, "dependencies": 1},
   {"name" : "Extenject", "tag" : "", "gitPath" : "Auros/Bepinject", "releaseId" : 1},
   {"name" : "HoneyLib", "tag" : "", "gitPath" : "BzzzThe18th/HoneyLib", "releaseId" : 0},
   {"name" : "TMPLoader", "tag" : "", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0}
