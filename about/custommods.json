@@ -9,7 +9,7 @@
   {"Name":"ImprovedComputer", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ImprovedComputer.dll"},
   {"Name":"ShibaGTDARK", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
   {"Name":"Skybox", "Type":"zip", "Link":"https://hollowvr.github.io/mods/Skybox.zip"},
-  {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies": [4]},
+  {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll", "Dependencies": [4]},
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"}
 ]
