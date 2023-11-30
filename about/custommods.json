@@ -11,7 +11,7 @@
   {"Name":"Skybox", "Type":"zip", "Link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll"},
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"}
+  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"},
 ],
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
