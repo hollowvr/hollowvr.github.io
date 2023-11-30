@@ -13,4 +13,7 @@
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"}
 ]
+"Libraries": [
+  {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1}
+]
 }
