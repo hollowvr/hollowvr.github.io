@@ -20,7 +20,7 @@
   {"name" : "Computer Interface", "tag" : "", "gitPath" : "ToniMacaroni/ComputerInterface", "releaseId" : 0, "installPath": ""},
   {"name" : "Extenject", "tag" : "", "gitPath" : "Auros/Bepinject", "releaseId" : 1, "installPath": "BepInEx/plugins"},
   {"name" : "HoneyLib", "tag" : "", "gitPath" : "BzzzThe18th/HoneyLib", "releaseId" : 0, "installPath": ""},
-  {"name" : "TMPLoader", "tag" : "", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0, "installPath": ""}
+  {"name" : "TMPLoader", "tag" : "", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0, "installPath": ""},
   {"name" : "Newtonsoft.JSON", "tag" : "", "gitPath" : "legoandmars/Newtonsoft.Json", "releaseId" : 0, "installPath": ""}
 ]
 }
