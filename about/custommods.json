@@ -2,6 +2,7 @@
 "CustomMods":[
   {"Name":"YTTV-Checker", "Type":"dll", "Link":"https://hollowvr.github.io/mods/YTTV-Checker.dll"},
   {"Name":"YizziCamModV2", "Type":"dll", "Link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
+  {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"Name":"ColourMod", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ColourMod.dll"},
   {"Name":"Cosmetx", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Cosmetx.dll"},
   {"Name":"GorillaShirts", "Type":"dll", "Link":"https://hollowvr.github.io/mods/GorillaShirts.dll"},
@@ -10,8 +11,8 @@
   {"Name":"ShibaGTDARK", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
   {"Name":"Skybox", "Type":"zip", "Link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll"},
-  {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"}
+  {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"},
+  {"Name":"FPC", "Type":"dll", "Link":"https://hollowvr.github.io/mods/FPC.dll"}
 ],
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
