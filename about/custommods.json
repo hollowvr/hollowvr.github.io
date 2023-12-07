@@ -10,11 +10,15 @@
   {"Name":"GorillaShirts", "Type":"dll", "Link":"https://hollowvr.github.io/mods/GorillaShirts.dll"},
   {"Name":"DevBlinkMod", "Type":"dll", "Link":"https://hollowvr.github.io/mods/DevBlinkMod.dll"},
   {"Name":"ImprovedComputer", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ImprovedComputer.dll"},
-  {"Name":"ShibaGTDARK", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
   {"Name":"Skybox", "Type":"zip", "Link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"Name":"Tails", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Tails.dll"},
   {"Name":"WardrobeEnhancements", "Type":"dll", "Link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll"},
-  {"Name":"FPC", "Type":"dll", "Link":"https://hollowvr.github.io/mods/FPC.dll"}
+  {"Name":"FPC", "Type":"dll", "Link":"https://hollowvr.github.io/mods/FPC.dll"},
+  {"Name":"ShibaGTDARK Menu", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
+  {"Name":"Rexon Menu", "Type":"dll", "Link":"https://hollowvr.github.io/mods/RexonFREE.dll"},
+  {"Name":"Blu Menu", "Type":"dll", "Link":"https://hollowvr.github.io/mods/BluFinaleFree.dll"},
+  {"Name":"Tundra Client", "Type":"dll", "Link":"https://hollowvr.github.io/mods/TundraClient.dll"},
+  {"Name":"Crimson Client", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Crimson_Client_V6_1.dll"}
 ],
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
