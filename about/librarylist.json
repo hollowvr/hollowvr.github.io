@@ -1,5 +1,4 @@
 [
-  {"name" : "BepInEx", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
   {"name" : "Utilla", "gitPath" : "legoandmars/Utilla", "releaseId" : 0, "installPath": ""},
   {"name" : "Bepinject", "gitPath" : "Auros/Bepinject", "releaseId" : 0, "installPath": "BepInEx/plugins", "dependencies":[{"type": "lib", "name": "Extenject"}]},
   {"name" : "Computer Interface", "gitPath" : "ToniMacaroni/ComputerInterface", "releaseId" : 0, "installPath": "", "dependencies":[{"type": "lib", "name": "Bepinject"}]},
