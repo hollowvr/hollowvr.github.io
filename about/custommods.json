@@ -6,6 +6,7 @@
   {"Name":"NoSnitch", "Type":"dll", "Link":"https://hollowvr.github.io/mods/NoSnitch.dll"},
   {"Name":"AnimatedNoSnitch", "Type":"dll", "Link":"https://hollowvr.github.io/mods/AnimatedNoSnitch.dll"},
   {"Name":"AntiReport", "Type":"dll", "Link":"https://hollowvr.github.io/mods/AntiReport.dll"},
+  {"Name":"Walking Sim", "Type":"dll", "Link":"https://hollowvr.github.io/mods/walking.dll"},
   {"Name":"ColourMod", "Type":"dll", "Link":"https://hollowvr.github.io/mods/ColourMod.dll"},
   {"Name":"Cosmetx", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Cosmetx.dll"},
   {"Name":"GorillaShirts", "Type":"dll", "Link":"https://hollowvr.github.io/mods/GorillaShirts.dll"},
