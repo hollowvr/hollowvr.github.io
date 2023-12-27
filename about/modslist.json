@@ -12,7 +12,7 @@
   {"name":"DevBlinkMod", "link":"https://hollowvr.github.io/mods/DevBlinkMod.dll"},
   {"name":"ImprovedComputer", "link":"https://hollowvr.github.io/mods/ImprovedComputer.dll"},
   {"name":"Skybox", "link":"https://hollowvr.github.io/mods/Skybox.zip"},
-  {"name":"Tails", "link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies":[{"type": "lib", "name": "Utilla"}, {"type": "lib", "name": "HoneyLib"}],
+  {"name":"Tails", "link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies":[{"type": "lib", "name": "Utilla"}, {"type": "lib", "name": "HoneyLib"}]},
   {"name":"WardrobeEnhancements", "link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
   {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"ShibaGTDARK Menu", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
