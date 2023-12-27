@@ -14,10 +14,6 @@
   {"name":"Skybox", "link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"name":"Tails", "link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies":[{"type": "lib", "name": "Utilla"}, {"type": "lib", "name": "HoneyLib"}]},
   {"name":"WardrobeEnhancements", "link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
-  {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"ShibaGTDARK Menu", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
-  {"name":"Rexon Menu", "link":"https://hollowvr.github.io/mods/RexonFREE.dll"},
-  {"name":"Blu Menu", "link":"https://hollowvr.github.io/mods/BluFinaleFree.dll"},
-  {"name":"Tundra Client", "link":"https://hollowvr.github.io/mods/TundraClient.dll"},
-  {"name":"Crimson Client", "link":"https://hollowvr.github.io/mods/Crimson_Client_V6_1.dll"}
+  {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]}
+  {"name":"Rexon Menu", "link":"https://hollowvr.github.io/mods/RexonFREE.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]}
 ]
