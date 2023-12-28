@@ -16,5 +16,6 @@
   {"name":"WardrobeEnhancements", "link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
   {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"Rexon Menu", "link":"https://hollowvr.github.io/mods/RexonFREE.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"ShibaGTDARK", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"}
+  {"name":"ShibaGTDARK", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
+  {"name":"Flytroll Menu", "link":"https://hollowvr.github.io/mods/FLYTROLLMENUV4.dll"}
 ]
