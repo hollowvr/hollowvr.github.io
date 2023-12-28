@@ -17,5 +17,6 @@
   {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"Rexon Menu", "link":"https://hollowvr.github.io/mods/RexonFREE.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"ShibaGTDARK", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
+  {"name":"ShibaGTGold Menu", "link":"https://hollowvr.github.io/mods/ShibaGTGold.dll"},
   {"name":"Flytroll Menu", "link":"https://hollowvr.github.io/mods/FLYTROLLMENUV4.dll"}
 ]
