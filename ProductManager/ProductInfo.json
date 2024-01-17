@@ -1,8 +1,8 @@
 [
     {
-        "Name": "HPM 2024 P1",
+        "Name": "HPM 2024 P2",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/HollowIcon.png",
-        "Description": "Hollow Product Manager 2024 Patch 1 is the hub and downloader for all of my projects and applications. However some items near the end might not be from me flagged \"NOT MINE\" so take caution",
+        "Description": "Hollow Product Manager 2024 Patch 2 is the hub and downloader for all of my projects and applications. However some items near the end might not be from me flagged \"*\" so take caution",
         "AntiVirusDisabled": false,
         "File": "https://hollowvr.github.io/ProductManager/Files/HollowProductManager.exe",
         "Mine": true,
