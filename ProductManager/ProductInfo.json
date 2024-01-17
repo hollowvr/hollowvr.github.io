@@ -16,7 +16,8 @@
         "AntiVirusDisabled": true,
         "File": "https://hollowvr.github.io/ProductManager/Files/HollowModManger.exe",
         "Mine": true,
-        "Version": 3.1
+        "Version": 3.1,
+        "HPM": false
     },
     {
         "Name": "Discord Xp-Grinder",
@@ -25,7 +26,8 @@
         "AntiVirusDisabled": false,
         "File": "https://hollowvr.github.io/ProductManager/Files/Xp-Grinder.exe",
         "Mine": true,
-        "Version": 1.0
+        "Version": 1.0,
+        "HPM": false
     },
     {
         "Name": "Shiba Gold DLL Loader",
@@ -34,7 +36,8 @@
         "AntiVirusDisabled": true,
         "File": "https://hollowvr.github.io/ProductManager/Files/ShibDllLoader.exe",
         "Mine": true,
-        "Version": 1.0
+        "Version": 1.0,
+        "HPM": false
     },
     {
         "Name": "NOT MINE! Soudpad Crack",
@@ -43,6 +46,7 @@
         "AntiVirusDisabled": false,
         "File": "https://hollowvr.github.io/ProductManager/Files/SoundPad_Cracked.zip",
         "Mine": false,
-        "Version": 0.0
+        "Version": 0.0,
+        "HPM": false
     }
 ]
