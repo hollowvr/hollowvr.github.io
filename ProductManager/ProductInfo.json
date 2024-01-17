@@ -1,37 +1,47 @@
 [
     {
-        "Name": "Hollow Product Manager 2024 P1",
+        "Name": "HPM 2024 P1",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/HollowIcon.png",
-        "Description": "Hollow Product Manager 2024 P1 is the hub and downloader for all of my projects and applications. However some items near the end might not be from me flagged \"NOT MINE\" so take caution",
+        "Description": "Hollow Product Manager 2024 Patch 1 is the hub and downloader for all of my projects and applications. However some items near the end might not be from me flagged \"NOT MINE\" so take caution",
         "AntiVirusDisabled": false,
-        "File": "https://hollowvr.github.io/ProductManager/Files/HollowProductManager.exe"
+        "File": "https://hollowvr.github.io/ProductManager/Files/HollowProductManager.exe",
+        "Mine": true,
+        "Version": 2024.1
     },
     {
         "Name": "HollowModManager V3.1",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png",
         "Description": "Hollow Mod Manager is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some \"illegal\" mods such as rexon and antireport!",
         "AntiVirusDisabled": true,
-        "File": "https://hollowvr.github.io/ProductManager/Files/HollowModManger.exe"
+        "File": "https://hollowvr.github.io/ProductManager/Files/HollowModManger.exe",
+        "Mine": true,
+        "Version": 3.1
     },
     {
         "Name": "Discord Xp-Grinder",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/unknown.png",
         "Description": "This app is useful for discord servers with a leveling system that has a spam channel or jus ta server you want to text nuke! you can set a list of messages and watch as you send them all randomly super fast!",
         "AntiVirusDisabled": false,
-        "File": "https://hollowvr.github.io/ProductManager/Files/Xp-Grinder.exe"
+        "File": "https://hollowvr.github.io/ProductManager/Files/Xp-Grinder.exe",
+        "Mine": true,
+        "Version": 1.0
     },
     {
         "Name": "Shiba Gold DLL Loader",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png",
         "Description": "This is an easy loader for Shiba Gold Version DLL, it is not recommended you use as the dll loader version is outdated and is very much detected!",
         "AntiVirusDisabled": true,
-        "File": "https://hollowvr.github.io/ProductManager/Files/ShibDllLoader.exe"
+        "File": "https://hollowvr.github.io/ProductManager/Files/ShibDllLoader.exe",
+        "Mine": true,
+        "Version": 1.0
     },
     {
         "Name": "NOT MINE! Soudpad Crack",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/soundpad.png",
         "Description": "*requires Hollow Product Manager 2024 patch 1 (latest). This is free version of the paid app \"soundpad\". PLEASE USE WITH UTMOST CAUTION as this is not an application that i created nor cracked!",
         "AntiVirusDisabled": false,
-        "File": "https://hollowvr.github.io/ProductManager/Files/SoundPad_Cracked.zip"
+        "File": "https://hollowvr.github.io/ProductManager/Files/SoundPad_Cracked.zip",
+        "Mine": false,
+        "Version": 0.0
     }
 ]
