@@ -1,4 +1,5 @@
 [
 	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png"},
-	{"Name": "SomeName2", "ImageURL": "https://random.com/image2.png", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png"}
+	{"Name": "SomeName2", "ImageURL": "https://random.com/image2.png", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png"},
+	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png"}
 ]
