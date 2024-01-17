@@ -19,5 +19,12 @@
         "Description": "This is an easy loader for Shiba Gold Version DLL, it is not recommended you use as the dll loader version is outdated and is very much detected!",
         "AntiVirusDisabled": true,
         "File": "https://hollowvr.github.io/ProductManager/Files/ShibDllLoader.exe"
+    },
+    {
+        "Name": "NOT MINE! Soudpad Crack",
+        "ImageURL": "https://hollowvr.github.io/ProductManager/Images/soundpad.png",
+        "Description": "*requires Hollow Product Manager 2024 patch 1 (latest). This is free version of the paid app \"soundpad\". PLEASE USE WITH UTMOST CAUTION as this is not an application that i created nor cracked!",
+        "AntiVirusDisabled": false,
+        "File": "https://hollowvr.github.io/ProductManager/Files/SoundPad_Cracked.zip"
     }
 ]
