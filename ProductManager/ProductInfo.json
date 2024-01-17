@@ -1,17 +1,23 @@
 [
     {
-        "Name": "HollowModManager",
+        "Name": "HollowModManager V3.1",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png",
-        "Description": "Hollow Mod Manager is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some \"illegal\" mods such as rexon and antireport!"
+        "Description": "Hollow Mod Manager is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some \"illegal\" mods such as rexon and antireport!",
+        "AntiVirusDisabled": true,
+        "File": "https://hollowvr.github.io/ProductManager/Files/HollowModManger.exe"
     },
     {
         "Name": "Discord Xp-Grinder",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/unknown.png",
-        "Description": "This app is useful for discord servers with a leveling system that has a spam channel or jus ta server you want to text nuke! you can set a list of messages and watch as you send them all randomly super fast!"
+        "Description": "This app is useful for discord servers with a leveling system that has a spam channel or jus ta server you want to text nuke! you can set a list of messages and watch as you send them all randomly super fast!",
+        "AntiVirusDisabled": false,
+        "File": "https://hollowvr.github.io/ProductManager/Files/Xp-Grinder.exe"
     },
     {
         "Name": "Shiba Gold DLL Loader",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png",
-        "Description": "This is an easy loader for Shiba Gold Version DLL, it is not recommended you use as the dll loader version is outdated and is very much detected!"
+        "Description": "This is an easy loader for Shiba Gold Version DLL, it is not recommended you use as the dll loader version is outdated and is very much detected!",
+        "AntiVirusDisabled": true,
+        "File": "https://hollowvr.github.io/ProductManager/Files/ShibDllLoader.exe"
     }
 ]
