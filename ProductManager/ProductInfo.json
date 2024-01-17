@@ -1,5 +1,4 @@
 [
-  {"Name": "SomeName"},
-  {"Name": "SomeName2"},
-  {"Name": "SomeName3"}
+	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png"},
+	{"Name": "SomeName2", "ImageURL": "https://random.com/image2.png", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png"}
 ]
