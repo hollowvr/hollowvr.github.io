@@ -1,5 +1,4 @@
 [
-	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png"},
-	{"Name": "SomeName2", "ImageURL": "https://random.com/image2.png", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png"},
-	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png"}
+	{"Name": "HollowModManager", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png", "Description": "Hollow Mod Manager is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some /"illegal/" mods such as rexon and antireport!"},
+	{"Name": "Shiba Gold DLL Loader", "ImageURL": "https://random.com/image2.png", "ImageURL": "https://hollowvr.github.io/ProductManager/Images/ShibLoad.png", "Description": "This is an easy loader for Shiba Gold Version DLL, it is not reccommended you use as the dll loader version is outdated and is very much detected!"}
 ]
