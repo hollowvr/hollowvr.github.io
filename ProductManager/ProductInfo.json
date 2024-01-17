@@ -6,7 +6,8 @@
         "AntiVirusDisabled": false,
         "File": "https://hollowvr.github.io/ProductManager/Files/HollowProductManager.exe",
         "Mine": true,
-        "Version": 2024.1
+        "Version": 2024.1,
+        "HPM": true
     },
     {
         "Name": "HollowModManager V3.1",
