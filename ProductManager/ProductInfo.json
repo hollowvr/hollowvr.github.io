@@ -21,7 +21,7 @@
     },
     {
         "Name": "Discord Xp-Grinder",
-        "ImageURL": "https://hollowvr.github.io/ProductManager/Images/unknown.png",
+        "ImageURL": "https://hollowvr.github.io/ProductManager/Images/xpicon.png",
         "Description": "This app is useful for discord servers with a leveling system that has a spam channel or jus ta server you want to text nuke! you can set a list of messages and watch as you send them all randomly super fast!",
         "AntiVirusDisabled": false,
         "File": "https://hollowvr.github.io/ProductManager/Files/Xp-Grinder.exe",
