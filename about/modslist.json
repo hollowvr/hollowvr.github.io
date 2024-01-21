@@ -4,7 +4,6 @@
   {"name":"UnityExplorer", "link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"name":"NoSnitch", "link":"https://hollowvr.github.io/mods/NoSnitch.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"AnimatedNoSnitch", "link":"https://hollowvr.github.io/mods/AnimatedNoSnitch.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"AntiReport", "link":"https://hollowvr.github.io/mods/AntiReport.dll"},
   {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/walking.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"ColourMod", "link":"https://hollowvr.github.io/mods/ColourMod.dll"},
   {"name":"Cosmetx", "link":"https://hollowvr.github.io/mods/Cosmetx.dll", "dependencies":[{"type": "lib", "name": ""}]},
