@@ -2,20 +2,14 @@
   {"name":"YTTV-Checker", "link":"https://hollowvr.github.io/mods/YTTV-Checker.dll"},
   {"name":"YizziCamModV2", "link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
   {"name":"UnityExplorer", "link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"name":"NoSnitch", "link":"https://hollowvr.github.io/mods/NoSnitch.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"AnimatedNoSnitch", "link":"https://hollowvr.github.io/mods/AnimatedNoSnitch.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/walking.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"ColourMod", "link":"https://hollowvr.github.io/mods/ColourMod.dll"},
+  {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/WalkSimulator-v2.0.1.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"Cosmetx", "link":"https://hollowvr.github.io/mods/Cosmetx.dll", "dependencies":[{"type": "lib", "name": ""}]},
   {"name":"GorillaShirts", "link":"https://hollowvr.github.io/mods/GorillaShirts.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
   {"name":"DevBlinkMod", "link":"https://hollowvr.github.io/mods/DevBlinkMod.dll"},
+  {"name":"Computer++", "link":"https://hollowvr.github.io/mods/ComputerPlusPlus-v1.0.1.dll"},
   {"name":"ImprovedComputer", "link":"https://hollowvr.github.io/mods/ImprovedComputer.dll"},
-  {"name":"Skybox", "link":"https://hollowvr.github.io/mods/Skybox.zip"},
   {"name":"Tails", "link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies":[{"type": "lib", "name": "Utilla"}, {"type": "lib", "name": "HoneyLib"}]},
   {"name":"WardrobeEnhancements", "link":"https://hollowvr.github.io/mods/WardrobeEnhancements.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
-  {"name":"FPC", "link":"https://hollowvr.github.io/mods/FPC.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"Rexon Menu", "link":"https://hollowvr.github.io/mods/RexonFREE.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"ShibaGTDARK", "link":"https://hollowvr.github.io/mods/ShibaGTDARK.dll"},
-  {"name":"ShibaGTGold", "link":"https://hollowvr.github.io/mods/ShibaGTGold.dll"},
-  {"name":"Flytroll Menu", "link":"https://hollowvr.github.io/mods/FLYTROLLMENUV4.dll"}
+  {"name":"ShibaRemastered", "link":"https://hollowvr.github.io/mods/ShibaRemastered.dll"}
 ]
