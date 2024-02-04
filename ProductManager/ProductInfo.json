@@ -10,13 +10,13 @@
         "HPM": true
     },
     {
-        "Name": "HollowModManager V3.1",
+        "Name": "HollowModManager V3.2",
         "ImageURL": "https://hollowvr.github.io/ProductManager/Images/hollow.png",
-        "Description": "Hollow Mod Manager is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some \"illegal\" mods such as rexon and antireport!",
+        "Description": "Hollow Mod Manager V3.2 is a great alternative to monkey mod manager, it has community made mods like yizzi gorilla shirts, and honeylib but also has some \"illegal\" mods such as rexon and antireport!",
         "AntiVirusDisabled": true,
         "File": "https://hollowvr.github.io/ProductManager/Files/HollowModManger.exe",
         "Mine": true,
-        "Version": 3.1,
+        "Version": 3.2,
         "HPM": false
     },
     {
