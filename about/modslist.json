@@ -3,7 +3,7 @@
   {"name":"YizziCamModV2", "link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
   {"name":"UnityExplorer", "link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/WalkSimulator-v2.0.1.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
-  {"name":"Cosmetx", "link":"https://hollowvr.github.io/mods/Cosmetx.dll", "dependencies":[{"type": "lib", "name": ""}]},
+  {"name":"Cosmetx", "link":"https://hollowvr.github.io/mods/Cosmetx.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"GorillaShirts", "link":"https://hollowvr.github.io/mods/GorillaShirts.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
   {"name":"DevBlinkMod", "link":"https://hollowvr.github.io/mods/DevBlinkMod.dll"},
   {"name":"Computer++", "link":"https://hollowvr.github.io/mods/ComputerPlusPlus-v1.0.1.dll"},
