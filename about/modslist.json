@@ -5,7 +5,6 @@
   {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/WalkSimulator-v2.0.1.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"Cosmetx", "link":"https://hollowvr.github.io/mods/Cosmetx.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"GorillaShirts", "link":"https://hollowvr.github.io/mods/GorillaShirts.dll", "dependencies":[{"type": "lib", "name": "Bepinject"}, {"type": "lib", "name": "Extenject"}, {"type": "lib", "name": "Newtonsoft.JSON"}]},
-  {"name":"DevBlinkMod", "link":"https://hollowvr.github.io/mods/DevBlinkMod.dll"},
   {"name":"Computer++", "link":"https://hollowvr.github.io/mods/ComputerPlusPlus-v1.0.1.dll"},
   {"name":"ImprovedComputer", "link":"https://hollowvr.github.io/mods/ImprovedComputer.dll"},
   {"name":"Tails", "link":"https://hollowvr.github.io/mods/Tails.dll", "dependencies":[{"type": "lib", "name": "Utilla"}, {"type": "lib", "name": "HoneyLib"}]},
