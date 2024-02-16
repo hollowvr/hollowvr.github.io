@@ -1,5 +1,4 @@
 [
-  {"name":"YTTV-Checker", "link":"https://hollowvr.github.io/mods/YTTV-Checker.dll"},
   {"name":"YizziCamModV2", "link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
   {"name":"UnityExplorer", "link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
   {"name":"Walking Sim", "link":"https://hollowvr.github.io/mods/WalkSimulator-v2.0.1.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
