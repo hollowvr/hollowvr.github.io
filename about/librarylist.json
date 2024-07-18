@@ -6,4 +6,5 @@
   {"name" : "HoneyLib", "gitPath" : "BzzzThe18th/HoneyLib", "releaseId" : 0, "installPath": ""},
   {"name" : "TMPLoader", "gitPath" : "AHauntedArmy/TMPLoader", "releaseId" : 0, "installPath": ""},
   {"name" : "Newtonsoft.JSON", "gitPath" : "legoandmars/Newtonsoft.Json", "releaseId" : 0, "installPath": ""}
+  {"name" : "GorillaMenu", "gitPath" : "wryser/Gorilla-Menu", "releaseId" : 0, "installPath": "BepInEx\\plugins"},
 ]
