@@ -1,5 +1,7 @@
 [
   {"name":"YizziCamModV2", "link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
   {"name":"UnityExplorer", "link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"name":"Weather Time", "link":"https://hollowvr.github.io/mods/Weather.time.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]}
+  {"name":"Weather Time", "link":"https://hollowvr.github.io/mods/Weather.time.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
+  {"name":"foms (MonkeySoundRemover)", "link":"https://hollowvr.github.io/mods/foms.dll"},
+  {"name":"Wrysers GoPro", "link":"https://hollowvr.github.io/mods/WrysersGoPro.dll"}
 ]
