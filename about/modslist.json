@@ -4,5 +4,6 @@
   {"name":"Weather Time", "link":"https://hollowvr.github.io/mods/Weather.time.dll", "dependencies":[{"type": "lib", "name": "Utilla"}]},
   {"name":"foms (MonkeySoundRemover)", "link":"https://hollowvr.github.io/mods/foms.dll"},
   {"name":"Wrysers GoPro", "link":"https://hollowvr.github.io/mods/WrysersGoPro.dll", "dependencies":[{"type": "lib", "name": "GorillaMenu"}]},
-  {"name":"GorillaShirts", "link":"https://github.com/developer9998/GorillaShirts/releases/download/1.1.2/GorillaShirts.zip"}
+  {"name":"GorillaShirts", "link":"https://github.com/developer9998/GorillaShirts/releases/download/1.1.2/GorillaShirts.zip"},
+  {"name":"Striker Camera Mod", "link":"https://hollowvr.github.io/mods/strikercammod.dll"}
 ]
