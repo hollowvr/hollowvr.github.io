@@ -2,7 +2,7 @@
 "CustomMods":[
   {"Name":"YizziCamModV2", "Type":"dll", "Link":"https://hollowvr.github.io/mods/YizziCamModV2.dll"},
   {"Name":"UnityExplorer", "Type":"zip", "Link":"https://hollowvr.github.io/mods/UnityExplorer.zip"},
-  {"Name":"Cosmetx", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Cosmetx.dll"},
+  {"Name":"Cosmetx", "Type":"dll", "Link":"https://hollowvr.github.io/mods/Cosmetx.dll"}
 ],
 "Libraries": [
   {"name" : "BepInEx", "tag" : "", "gitPath" : "BepInEx/BepInEx", "releaseId" : 1},
