@@ -1371,3 +1371,4 @@ blooketDB.pack.wonderland.blooks = [
   blooketDB.blooks["Mad Hatter"],
   blooketDB.blooks["King of Hearts"]
 ];
+export default blooketDB;
