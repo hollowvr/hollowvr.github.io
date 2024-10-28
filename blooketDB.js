@@ -1233,18 +1233,21 @@ BDB.pack.aquatic.blooks = [
 ];
 
 BDB.pack.blizzard.blooks = [
-  BDB.blooks["Old Boot"],
-  BDB.blooks["Jellyfish"],
-  BDB.blooks["Clownfish"],
-  BDB.blooks["Frog"],
-  BDB.blooks["Crab"],
-  BDB.blooks["Pufferfish"],
-  BDB.blooks["Blobfish"],
-  BDB.blooks["Octopus"],
-  BDB.blooks["Narwhal"],
-  BDB.blooks["Dolphin"],
-  BDB.blooks["Baby Shark"],
-  BDB.blooks["Megalodon"]
+  BDB.blooks["Snow Globe"],
+  BDB.blooks["Holiday Gift"],
+  BDB.blooks["Hot Chocolate"],
+  BDB.blooks["Holiday Wreath"],
+  BDB.blooks["Stocking"],
+  BDB.blooks["Gingerbread Man"],
+  BDB.blooks["Gingerbread House"],
+  BDB.blooks["Reindeer"],
+  BDB.blooks["Snowman"],
+  BDB.blooks["Santa Claus"],
+  BDB.blooks["New York Snow Globe"],
+  BDB.blooks["London Snow Globe"],
+  BDB.blooks["Japan Snow Globe"],
+  BDB.blooks["Frost Wreath"],
+  BDB.blooks["Tropical Globe"]
 ];
 
 BDB.pack.bot.blooks = [
@@ -1306,6 +1309,32 @@ BDB.pack.medieval.blooks = [
   BDB.blooks["Unicorn"],
   BDB.blooks["King"]
 ];
+
+BDB.pack.outback.blooks = [
+  BDB.blooks["Dingo"],
+  BDB.blooks["Echidna"],
+  BDB.blooks["Koala"],
+  BDB.blooks["Kookaburra"],
+  BDB.blooks["Platypus"],
+  BDB.blooks["Joey"],
+  BDB.blooks["Kangaroo"],
+  BDB.blooks["Crocadile"],
+  BDB.blooks["Sugar Glider"],
+  BDB.blooks["Teal Platypus"]
+]
+
+BDB.pack.pirate.blooks = [
+  BDB.blooks["Deckhand"],
+  BDB.blooks["Buccaneer"],
+  BDB.blooks["Swashbuckler"],
+  BDB.blooks["Treasure Map"],
+  BDB.blooks["Seagull"],
+  BDB.blooks["Jolly Pirate"],
+  BDB.blooks["Pirate Ship"],
+  BDB.blooks["Kraken"],
+  BDB.blooks["Captain Blackbeard"],
+  BDB.blooks["Pirate Pufferfish"]
+]
 
 BDB.pack.safari.blooks = [
   BDB.blooks["Panda"],
