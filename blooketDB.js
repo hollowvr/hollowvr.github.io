@@ -1243,11 +1243,9 @@ BDB.pack.blizzard.blooks = [
   BDB.blooks["Reindeer"],
   BDB.blooks["Snowman"],
   BDB.blooks["Santa Claus"],
-  BDB.blooks["New York Snow Globe"],
-  BDB.blooks["London Snow Globe"],
-  BDB.blooks["Japan Snow Globe"],
-  BDB.blooks["Frost Wreath"],
-  BDB.blooks["Tropical Globe"]
+  BDB.blooks["Red Sweater Snowman"],
+  BDB.blooks["Blue Sweater Snowman"],
+  BDB.blooks["Elf Sweater Snowman"]
 ];
 
 BDB.pack.bot.blooks = [
