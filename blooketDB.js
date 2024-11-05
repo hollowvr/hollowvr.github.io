@@ -550,7 +550,7 @@ BDB.pack.dino.blooks = [
   BDB.blooks["Tyrannosaurus Rex"]
 ];
 
-BDB.pack.icemonsters.blooks = [
+BDB.pack.icemonster.blooks = [
   BDB.blooks["Ice Bat"],
   BDB.blooks["Ice Bug"],
   BDB.blooks["Ice Elemental"],
