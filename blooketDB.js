@@ -583,7 +583,7 @@ BDB.pack.outback.blooks = [
   BDB.blooks["Platypus"],
   BDB.blooks["Joey"],
   BDB.blooks["Kangaroo"],
-  BDB.blooks["Crocadile"],
+  BDB.blooks["Crocodile"],
   BDB.blooks["Sugar Glider"],
   BDB.blooks["Teal Platypus"]
 ]
