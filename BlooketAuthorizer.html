@@ -2,8 +2,8 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-    <style>.RYID{z-index:1000;gap:5px;position:fixed;width:100vw;height:100vh;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:#f4f4f4}.xcLd{font-family: Arial, sans-serif;color:gray;}.Y5eD{width:50px;height:50px;border:6px solid #ccc;border-top:6px solid #888;border-radius:50%;animation:1s linear infinite KxhH}@keyframes KxhH{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.wlku{font-family: Arial, sans-serif;color:gray;position:fixed;top:calc(100% - 40px);}.wlku::after{content:'Blookedex';font-family:'Titan One';font-size:30px;</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Titan+One&display=swap" rel="stylesheet">
+    <style>body{position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center;}.RYID{z-index:1000;gap:5px;position:fixed;width:100vw;height:100vh;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:#f4f4f4}.xcLd{font-family: Arial, sans-serif;color:gray;}.Y5eD{width:50px;height:50px;border:6px solid #ccc;border-top:6px solid #888;border-radius:50%;animation:1s linear infinite KxhH}@keyframes KxhH{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.wlku{z-index:2000;font-family: Arial, sans-serif;color:black;opacity:0.5;position:fixed;top:calc(100% - 40px);}.wlku::after{content:'Blookedex';font-family:'Titan One';font-size:30px;}.Fn5H{width:500px;height:auto;padding-bottom:25px;background:white;border-radius:20px;box-shadow:0 5px 20px #00000066;color:black;}</style>
     <script type="module">
       'use strict';
 
@@ -28,8 +28,8 @@
       const overlay = Object.assign(document.createElement('div'), {className: 'RYID'});
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
-      overlay.appendChild(Object.assign(document.createElement('div'), {className: 'wlku',textContent: "Powered By "}));
       document.body.appendChild(overlay);
+      document.body.appendChild(Object.assign(document.createElement('div'), {className: 'wlku',textContent: "Powered By "}));
 
       function setCookie(cname, cvalue, exdays) {
         const d = new Date();
@@ -132,6 +132,33 @@
       };
       const event = new Event('addonInitialized');
       window.dispatchEvent(event);
+      
+      function wait(seconds) {
+        return new Promise(resolve => {
+          setTimeout(resolve, seconds * 1000);
+        });
+      }
+      function noAddon() {
+        overlay.remove();
+        document.head.appendChild(Object.assign(document.createElement('style'), {type: 'text/css',textContent: "body {background: #07c2d0;font-family: 'Titan One';color:white;}body::after {content:'';position: fixed;width: 200%;height: 200%;top: 50%;left: 50%;z-index: -1;background: url('https://ac.blooket.com/play/65a43218fd1cabe52bdf1cda34613e9e.png') repeat;background-size: 550px;background-position: -100px -100px;opacity: 0.1;transform: translate(-50%, -50%) rotate(15deg)}"} ));
+        const alertWindow = document.createElement('div');
+        alertWindow.className = 'Fn5H';
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {textContent: 'Uh Oh!', style: "color:#ee3333;width:100%;text-align:center;font-size:50px;margin:10px;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {innerHTML: 'The Log in With Blooket Feature requires a <a target="_blank" href="https://www.tampermonkey.net">TamperMonkey</a> Userscript in order to allow communication with Blooket.', style: "color:black;width:100%;text-align:center;font-size:20px;font-family: Roboto;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {textContent: 'Step 1', style: "color:black;width:100%;text-align:center;font-size:30px;margin:10px;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {innerHTML: 'Get the TamperMonkey extention from their <a target="_blank" href="https://www.tampermonkey.net">website</a><br />or the <a target="_blank" href="https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo">Chrome Web Store</a>.', style: "color:black;width:100%;text-align:center;font-size:20px;font-family: Roboto;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {textContent: 'Step 2', style: "color:black;width:100%;text-align:center;font-size:30px;margin:10px;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {innerHTML: "Locate your browser's Manage Extentions page and enable Developer Mode", style: "color:black;width:100%;text-align:center;font-size:20px;font-family: Roboto;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {textContent: 'Step 3', style: "color:black;width:100%;text-align:center;font-size:30px;margin:10px;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {innerHTML: 'Install the <a target="_blank" href="https://greasyfork.org/en/scripts/521312-blooket-login-client">Userscript</a> presented by Blookedex from Greasy Fork.', style: "color:black;width:100%;text-align:center;font-size:20px;font-family: Roboto;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('div'), {textContent: 'Step 4', style: "color:black;width:100%;text-align:center;font-size:30px;margin:10px;"}));
+        alertWindow.appendChild(Object.assign(document.createElement('button'), {textContent: 'Reload',style: "color:white;width:400px;text-align:center;font-size:20px;height:50px;font-family:'Titan One';background:#a950bb;border:none;border-radius:10px;box-shadow: 0 10px 0 #773883;cursor:pointer;transform:translateX(50px);",onclick: function() {location.reload();}}));
+        document.body.appendChild(alertWindow);
+      }
+      (async () => {
+        await wait(1.5);
+        noAddon();
+      })();
     </script>
   </head>
   <body></body>
