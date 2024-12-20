@@ -110,7 +110,7 @@
       window.addonPresent = function () {
         if (getCookie("fireid") !== "") {
           overlay.remove()
-          console.log(getUserByDocumentId(GetCookie("fireid")));
+          console.log(getUserByDocumentId(getCookie("fireid")));
           return;
         }
         const urlParams = new URLSearchParams(window.location.search);
