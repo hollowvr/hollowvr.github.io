@@ -5,7 +5,7 @@
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+    import { getFirestore, collection, query, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyCGqgQ_raq3MylUEGrPi7itVd7PPziogng",
@@ -32,20 +32,50 @@
     async function addUser(userData) {
       try {
         const docRef = await addDoc(collection(db, "users"), userData);
-        console.log("User added with ID:", docRef.id);
       } catch (e) {
         console.error("Error adding user:", e.message, e);
       }
     }
 
+    async function getUserByKey(key, value) {
+      const usersCollection = collection(db, "users");
+      const userQuery = query(usersCollection, where(key, "==", value));
+
+      try {
+        const querySnapshot = await getDocs(userQuery);
+        if (querySnapshot.empty) {
+          return null;
+        }
+
+        let userData = null;
+        querySnapshot.forEach((doc) => {
+          // Assuming one match is expected, we return the first match
+          userData = { id: doc.id, ...doc.data() }; // Include document ID with data
+        });
+
+        return userData;
+      } catch (e) {
+        console.error("Error retrieving user:", e.message, e);
+        throw e; // Re-throw the error if needed
+      }
+    }
+    
     function addonPresent() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('returnData') === null) {
         window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
         return;
       }
+      const returnData = JSON.parse(urlParams.get('returnData'));
       overlay.remove();
-      addUser(JSON.parse(urlParams.get('returnData')));
+      (async () => {
+        const user = await getUserByKey("username", returnData.username);
+        if (user) {
+          console.log("User data retrieved:", user);
+        } else {
+          await addUser(returnData);
+        }
+      })();
     };
     addonPresent();
   </script>
