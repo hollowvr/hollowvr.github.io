@@ -1,15 +1,42 @@
 <head>
   <style>.RYID{z-index:1000;gap:5px;position:fixed;width:100vw;height:100vh;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:#f4f4f4}.xcLd{font-family: Arial, sans-serif;color:gray;}.Y5eD{width:50px;height:50px;border:6px solid #ccc;border-top:6px solid #888;border-radius:50%;animation:1s linear infinite KxhH}@keyframes KxhH{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style>
-  <script>
+  <script type="module">
     'use strict';
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCGqgQ_raq3MylUEGrPi7itVd7PPziogng",
+      authDomain: "blookedex.firebaseapp.com",
+      projectId: "blookedex",
+      storageBucket: "blookedex.firebasestorage.app",
+      messagingSenderId: "504422219899",
+      appId: "1:504422219899:web:bcfbc0da77410cf1e662de",
+      measurementId: "G-NE6R1DPXYD"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+
     const overlay = Object.assign(document.createElement('div'), {className: 'RYID'});
     overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
     overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
     
     document.addEventListener('DOMContentLoaded', () => {
       document.body.appendChild(overlay);
-      addonPresent();
     });
+    
+    async function addUser(userData) {
+      try {
+        const docRef = await addDoc(collection(db, "users"), userData);
+        console.log("User added with ID:", docRef.id);
+      } catch (e) {
+        console.error("Error adding user:", e.message, e);
+      }
+    }
 
     function addonPresent() {
       const urlParams = new URLSearchParams(window.location.search);
@@ -17,9 +44,8 @@
         window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
         return;
       }
-
       overlay.remove();
-      document.body.appendChild(Object.assign(document.createElement('pre'), {textContent: urlParams.get('returnData')}));
+      addUser(JSON.parse(urlParams.get('returnData')));
     };
   </script>
 </head>
