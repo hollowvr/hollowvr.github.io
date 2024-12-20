@@ -107,21 +107,18 @@
         }
       }
       let addon = false;
-      window.addonPresent = function () {
+      window.addonPresent = async function () {
         addon = true;
-        if (getCookie("fireid") !== "") {
-          overlay.remove()
-          console.log(getUserByDocumentId(getCookie("fireid")));
-          return;
-        }
+        let returnData = {};
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('returnData') === null) {
-          window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
-          return;
-        }
-        const returnData = JSON.parse(urlParams.get('returnData'));
-        overlay.remove();
-        (async () => {
+        if (getCookie("fireid") !== "") {
+          returnData = await getUserByDocumentId(getCookie("fireid"));
+        } else {
+          if (urlParams.get('returnData') === null) {
+            window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1" + (urlParams.get('redirectUrl') !== null ? "&redirectUrl="+urlParams.get('redirectUrl') : ""));
+            return;
+          }
+          returnData = JSON.parse(urlParams.get('returnData'));
           const user = await getUserByKey("username", returnData.username);
           if (user) {
             setCookie("fireid", user.id, 4);
@@ -129,7 +126,11 @@
             const id = await addUser(returnData);
             setCookie("fireid", id, 4);
           }
-        })();
+        }
+        
+        if (urlParams.get('redirectUrl') !== null) {
+           window.location.replace(urlParams.get('redirectUrl') + "?userData=" + JSON.stringify(returnData));
+        }
       };
       const event = new Event('addonInitialized');
       window.dispatchEvent(event);
