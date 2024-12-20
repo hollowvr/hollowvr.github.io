@@ -70,13 +70,11 @@
         try {
           const querySnapshot = await getDocs(userQuery);
           if (querySnapshot.empty) {
-            console.log(`No user found with ${key}: ${value}`);
             return null;
           }
 
           let userData = null;
           querySnapshot.forEach((doc) => {
-            // Retrieve both the document ID and its data
             userData = { id: doc.id, ...doc.data() };
           });
 
@@ -87,8 +85,34 @@
         }
       }
 
+      async function getUserByDocumentId(documentId) {
+        try {
+          // Reference to the specific document in the "users" collection
+          const docRef = doc(db, "users", documentId);
 
+          // Fetch the document
+          const docSnap = await getDoc(docRef);
+
+          // Check if the document exists
+          if (!docSnap.exists()) {
+            console.log(`No user found with document ID: ${documentId}`);
+            return null;
+          }
+
+          // Return the user's data, including the document ID
+          return { id: docSnap.id, ...docSnap.data() };
+        } catch (e) {
+          console.error("Error retrieving user by document ID:", e.message, e);
+          throw e;
+        }
+      }
+      
       window.addonPresent = function () {
+        if (GetCookie("fireid") !== "") {
+          overlay.remove()
+          console.log(getUserByDocumentId(GetCookie("fireid")));
+          return;
+        }
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('returnData') === null) {
           window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
@@ -99,7 +123,6 @@
         (async () => {
           const user = await getUserByKey("username", returnData.username);
           if (user) {
-            console.log("User data retrieved:", user);
             setCookie("fireid", user.id, 4);
           } else {
             const id = await addUser(returnData);
