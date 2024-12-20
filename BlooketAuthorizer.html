@@ -7,18 +7,19 @@
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
       document.body.appendChild(overlay);
-
-      function addonPresent() {
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('returnData') === null) {
-          window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
-          return;
-        }
-
-        overlay.remove();
-        document.body.appendChild(Object.assign(document.createElement('pre'), {textContent: urlParams.get('returnData')}));
-      };
     });
+
+    function addonPresent() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('returnData') === null) {
+        window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
+        return;
+      }
+
+      overlay.remove();
+      document.body.appendChild(Object.assign(document.createElement('pre'), {textContent: urlParams.get('returnData')}));
+    };
+    addonPresent();
   </script>
 </head>
 <body></body>
