@@ -29,10 +29,7 @@
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'wlku',textContent: "Powered By "}));
-
-      document.addEventListener('DOMContentLoaded', () => {
-        document.body.appendChild(overlay);
-      });
+      document.body.appendChild(overlay);
 
       async function addUser(userData) {
         try {
@@ -72,7 +69,6 @@
           return;
         }
         const returnData = JSON.parse(urlParams.get('returnData'));
-        overlay = null;
         overlay.remove();
         (async () => {
           const user = await getUserByKey("username", returnData.username);
