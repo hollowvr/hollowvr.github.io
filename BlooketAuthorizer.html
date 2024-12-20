@@ -108,7 +108,7 @@
       }
       
       window.addonPresent = function () {
-        if (GetCookie("fireid") !== "") {
+        if (getCookie("fireid") !== "") {
           overlay.remove()
           console.log(getUserByDocumentId(GetCookie("fireid")));
           return;
