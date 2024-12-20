@@ -1,82 +1,84 @@
-<head>
-  <style>.RYID{z-index:1000;gap:5px;position:fixed;width:100vw;height:100vh;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:#f4f4f4}.xcLd{font-family: Arial, sans-serif;color:gray;}.Y5eD{width:50px;height:50px;border:6px solid #ccc;border-top:6px solid #888;border-radius:50%;animation:1s linear infinite KxhH}@keyframes KxhH{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style>
-  <script type="module">
-    'use strict';
+<html data-site="blookedexAuth">
+  <head>
+    <style>.RYID{z-index:1000;gap:5px;position:fixed;width:100vw;height:100vh;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:#f4f4f4}.xcLd{font-family: Arial, sans-serif;color:gray;}.Y5eD{width:50px;height:50px;border:6px solid #ccc;border-top:6px solid #888;border-radius:50%;animation:1s linear infinite KxhH}@keyframes KxhH{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style>
+    <script type="module">
+      'use strict';
 
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-    import { getFirestore, collection, query, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+      import { getFirestore, collection, query, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyCGqgQ_raq3MylUEGrPi7itVd7PPziogng",
-      authDomain: "blookedex.firebaseapp.com",
-      projectId: "blookedex",
-      storageBucket: "blookedex.firebasestorage.app",
-      messagingSenderId: "504422219899",
-      appId: "1:504422219899:web:bcfbc0da77410cf1e662de",
-      measurementId: "G-NE6R1DPXYD"
-    };
+      const firebaseConfig = {
+        apiKey: "AIzaSyCGqgQ_raq3MylUEGrPi7itVd7PPziogng",
+        authDomain: "blookedex.firebaseapp.com",
+        projectId: "blookedex",
+        storageBucket: "blookedex.firebasestorage.app",
+        messagingSenderId: "504422219899",
+        appId: "1:504422219899:web:bcfbc0da77410cf1e662de",
+        measurementId: "G-NE6R1DPXYD"
+      };
 
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const db = getFirestore(app);
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getFirestore(app);
 
-    const overlay = Object.assign(document.createElement('div'), {className: 'RYID'});
-    overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
-    overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
-    
-    document.addEventListener('DOMContentLoaded', () => {
-      document.body.appendChild(overlay);
-    });
-    
-    async function addUser(userData) {
-      try {
-        const docRef = await addDoc(collection(db, "users"), userData);
-      } catch (e) {
-        console.error("Error adding user:", e.message, e);
-      }
-    }
+      const overlay = Object.assign(document.createElement('div'), {className: 'RYID'});
+      overlay.appendChild(Object.assign(document.createElement('div'), {className: 'Y5eD'}));
+      overlay.appendChild(Object.assign(document.createElement('div'), {className: 'xcLd',textContent: "loading..."}));
 
-    async function getUserByKey(key, value) {
-      const usersCollection = collection(db, "users");
-      const userQuery = query(usersCollection, where(key, "==", value));
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.appendChild(overlay);
+      });
 
-      try {
-        const querySnapshot = await getDocs(userQuery);
-        if (querySnapshot.empty) {
-          return null;
+      async function addUser(userData) {
+        try {
+          const docRef = await addDoc(collection(db, "users"), userData);
+        } catch (e) {
+          console.error("Error adding user:", e.message, e);
         }
-
-        let userData = null;
-        querySnapshot.forEach((doc) => {
-          // Assuming one match is expected, we return the first match
-          userData = { id: doc.id, ...doc.data() }; // Include document ID with data
-        });
-
-        return userData;
-      } catch (e) {
-        console.error("Error retrieving user:", e.message, e);
-        throw e; // Re-throw the error if needed
       }
-    }
-    
-    window.addonPresent = function addonPresent() {
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('returnData') === null) {
-        window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
-        return;
-      }
-      const returnData = JSON.parse(urlParams.get('returnData'));
-      overlay.remove();
-      (async () => {
-        const user = await getUserByKey("username", returnData.username);
-        if (user) {
-          console.log("User data retrieved:", user);
-        } else {
-          await addUser(returnData);
+
+      async function getUserByKey(key, value) {
+        const usersCollection = collection(db, "users");
+        const userQuery = query(usersCollection, where(key, "==", value));
+
+        try {
+          const querySnapshot = await getDocs(userQuery);
+          if (querySnapshot.empty) {
+            return null;
+          }
+
+          let userData = null;
+          querySnapshot.forEach((doc) => {
+            // Assuming one match is expected, we return the first match
+            userData = { id: doc.id, ...doc.data() }; // Include document ID with data
+          });
+
+          return userData;
+        } catch (e) {
+          console.error("Error retrieving user:", e.message, e);
+          throw e; // Re-throw the error if needed
         }
-      })();
-    };
-  </script>
-</head>
-<body></body>
+      }
+
+      window.addonPresent = function addonPresent() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('returnData') === null) {
+          window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
+          return;
+        }
+        const returnData = JSON.parse(urlParams.get('returnData'));
+        overlay.remove();
+        (async () => {
+          const user = await getUserByKey("username", returnData.username);
+          if (user) {
+            console.log("User data retrieved:", user);
+          } else {
+            await addUser(returnData);
+          }
+        })();
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
