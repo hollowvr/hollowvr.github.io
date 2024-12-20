@@ -72,6 +72,7 @@
           return;
         }
         const returnData = JSON.parse(urlParams.get('returnData'));
+        overlay = null;
         overlay.remove();
         (async () => {
           const user = await getUserByKey("username", returnData.username);
