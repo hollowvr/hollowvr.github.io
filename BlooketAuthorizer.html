@@ -31,9 +31,33 @@
       overlay.appendChild(Object.assign(document.createElement('div'), {className: 'wlku',textContent: "Powered By "}));
       document.body.appendChild(overlay);
 
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+      
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
       async function addUser(userData) {
         try {
           const docRef = await addDoc(collection(db, "users"), userData);
+          return docRef.id;
         } catch (e) {
           console.error("Error adding user:", e.message, e);
         }
@@ -46,21 +70,23 @@
         try {
           const querySnapshot = await getDocs(userQuery);
           if (querySnapshot.empty) {
+            console.log(`No user found with ${key}: ${value}`);
             return null;
           }
 
           let userData = null;
           querySnapshot.forEach((doc) => {
-            // Assuming one match is expected, we return the first match
-            userData = { id: doc.id, ...doc.data() }; // Include document ID with data
+            // Retrieve both the document ID and its data
+            userData = { id: doc.id, ...doc.data() };
           });
 
           return userData;
         } catch (e) {
           console.error("Error retrieving user:", e.message, e);
-          throw e; // Re-throw the error if needed
+          throw e;
         }
       }
+
 
       window.addonPresent = function () {
         const urlParams = new URLSearchParams(window.location.search);
@@ -74,8 +100,10 @@
           const user = await getUserByKey("username", returnData.username);
           if (user) {
             console.log("User data retrieved:", user);
+            setCookie("fireid", user.id, 4);
           } else {
-            await addUser(returnData);
+            const id = await addUser(returnData);
+            setCookie("fireid", id, 4);
           }
         })();
       };
