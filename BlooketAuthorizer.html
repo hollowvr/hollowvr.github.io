@@ -14,7 +14,7 @@
     function addonPresent() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('returnData') === null) {
-        window.location.href("https://dashboard.blooket.com/stats?authorizationRequest=1");
+        window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1");
         return;
       }
 
