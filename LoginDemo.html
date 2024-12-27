@@ -20,6 +20,8 @@
                 document.getElementById('correctAnswers').innerText = returnData.correctAnswers;
                 document.getElementById('gamesPlayed').innerText = returnData.gamesPlayed;
             }
+            const baseUrl = window.location.pathname;
+            window.history.replaceState(null, '', baseUrl);
         });
     </script>
     <style>
