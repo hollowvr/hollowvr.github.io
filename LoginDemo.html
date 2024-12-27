@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <title>Log In With Blooket™ Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Titan+One&display=swap" rel="stylesheet">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('returnData') !== null) {
+                document.getElementById('demo-stage1').style.display = 'none';
+                document.getElementById('demo-stage2').style.display = 'initial';
+                const returnData = JSON.parse(urlParams.get('returnData'));
+                document.getElementById('icon').src = returnData.icon;
+                document.getElementById('username').textContent = returnData.username;
+                document.getElementById('totalTokens').innerText = returnData.totalTokens;
+                document.getElementById('blooksUnlocked').innerText = returnData.blooksUnlocked;
+                document.getElementById('wins').innerText = returnData.wins;
+                document.getElementById('playersDefeated').innerText = returnData.playersDefeated;
+                document.getElementById('correctAnswers').innerText = returnData.correctAnswers;
+                document.getElementById('gamesPlayed').innerText = returnData.gamesPlayed;
+            }
+        });
+    </script>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            width:100vw;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: #07c2d0;
+        }
+        body::before {
+            content:'';
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            background: url('https://ac.blooket.com/play/65a43218fd1cabe52bdf1cda34613e9e.png') repeat;
+            background-size: 550px;
+            background-position: -100px -100px;
+            opacity: 0.1;
+            transform: translate(-50%, -50%) rotate(15deg);
+        }
+        #demo-stage1{
+            width:300px;
+            height:auto;
+            padding:25px;
+            background:white;
+            border-radius:20px;
+            box-shadow:0 5px 20px #00000066;
+            color:black;
+            text-align:justify;
+        }
+        #demo-stage2{
+            display:none;
+            width:700px;
+            height:auto;
+            padding:25px;
+            background:white;
+            border-radius:20px;
+            box-shadow:0 5px 20px #00000066;
+            color:black;
+            text-align:justify;
+        }
+        .demo-header2 {
+            font-family:'Titan One';
+            font-size:25px;
+            text-align:left;
+        }
+        .demo-header {
+            font-family:'Titan One';
+            font-size:40px;
+            margin-bottom:10px;
+            text-align:left;
+        }
+        .demo-button {
+            width:100%;
+            height:50px;
+            border-radius:10px;
+            border:none;
+            cursor:pointer;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .demo-button:hover {
+            filter:brightness(1.1);
+        }
+        .demo-buttonShadow, .demo-buttonEdge, .demo-buttonFront {
+            position:absolute;
+            width:100%;
+            height:50px;
+            border-radius:10px;
+            transition: all 0.25s cubic-bezier(0.3, 0.7, 0.4, 1);
+        }
+        .demo-buttonShadow {
+            transform: translateY(3.23px);
+            background:black;
+            opacity:0.3;
+            z-index:1;
+        }
+        .demo-button:hover .demo-buttonShadow {
+            transform: translateY(6.45px);
+        }
+        .demo-buttonEdge {
+            background:rgb(21, 102, 178);
+            z-index:2;
+        }
+        .demo-buttonFront {
+            transform: translateY(-6.45px);
+            background:rgb(30, 146, 255);
+            z-index:3;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            color:white;
+            font-size:18px;
+            font-family: Roboto;
+        }
+        .demo-button:hover .demo-buttonFront {
+            transform: translateY(-9.68px);
+        }
+        .demo-topWrapper {
+            display:flex;
+            align-items: center;
+            gap:20px;
+        }
+        .demo-bigWrapper {
+            display:flex;
+            gap:20px;
+            background:#9a49aa;
+            border-radius:20px;
+            padding:10px;
+            box-shadow:0 0 20px #00000066;
+        }
+        .demo-infoTag {
+            font-family:Roboto;
+            font-size:20px;
+            text-wrap: nowrap;
+        }
+        .demo-statContainer {
+            display:grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 55px 55px 55px;
+            gap: 24px;
+            padding:10px;
+            flex-wrap: wrap;
+        }
+        .demo-statBox {
+            width:210px;
+            height:50px;
+            border-radius:10px;
+            background: #7a039d;
+            box-shadow: 0 5px #62027e;
+            position:relative;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            line-height: 0.9;
+        }
+        .demo-statTitle {
+            font-family: Nunito, sans-serif;
+            font-size: 16px;
+            color:white;
+        }
+        .demo-statValue {
+            font-size:28px;
+            color:white;
+            font-family: 'Titan One';
+        }
+        .demo-statImg {
+            position: absolute;
+            width:40px;
+            top: 15px;
+            left: -15px;
+            filter: drop-shadow(0 0 6px rgba(0, 0, 0, .2));
+            transform:rotate(-15deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="demo-stage1">
+        <div class="demo-header">Sign In</div>
+        <div class="demo-header2">Log In With Blooket™ Demo</div>
+        <p style="font-family: Roboto;">Lorem ipsum odor amet, consectetuer adipiscing elit. Id lectus taciti accumsan blandit conubia luctus. Eu purus scelerisque fames per sed bibendum platea aliquet. Varius viverra tempor sollicitudin commodo nascetur vulputate dolor.</p>
+        <div class="demo-button" role="button" onclick="window.location.replace('https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html')">
+            <div class="demo-buttonShadow"></div>
+            <div class="demo-buttonEdge"></div>
+            <div class="demo-buttonFront">
+                <img width="25" height="25" src="https://ac.blooket.com/dashclassic/assets/BlooketSquare32-Dsr-B0eG.png"></img>Sign in with Blooket
+            </div>
+        </div>
+    </div>
+    <div id="demo-stage2">
+        <div class="demo-topWrapper">
+            <div id="username" class="demo-header">scottythetotty</div>
+            <li class="demo-infoTag">User</li>
+            <div style="width:100%;display:flex;justify-content:flex-end;">
+                <div class="demo-button" role="button" onclick="alert('Session saving feature coming soon!')">
+                    <div style="height:40px;" class="demo-buttonShadow"></div>
+                    <div style="background:#c62127;filter:brightness(0.7);height:40px;" class="demo-buttonEdge"></div>
+                    <div style="background:#c62127;height:40px;" class="demo-buttonFront">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo-bigWrapper">
+            <img id="icon" src="https://placehold.jp/200x200.png" width="200"></img>
+            <div class="demo-statContainer">
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Total Tokens</div>
+                    <div id="totalTokens" class="demo-statValue">46</div>
+                    <img style="transform: rotate(-35deg);" class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/Token-DmrosBZF.svg"></img>
+                </div>
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Blooks Unlocked</div>
+                    <div id="blooksUnlocked" class="demo-statValue">46</div>
+                    <img class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/BlooksUnlocked-C2aoxAs0.svg"></img>
+                </div>
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Wins</div>
+                    <div id="wins" class="demo-statValue">46</div>
+                    <img class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/Wins-DwAC4320.svg"></img>
+                </div>
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Players Defeated</div>
+                    <div id="playersDefeated" class="demo-statValue">46</div>
+                    <img class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/PlayersDefeated-CO8z_rNu.svg"></img>
+                </div>
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Correct Answers</div>
+                    <div id="correctAnswers" class="demo-statValue">46</div>
+                    <img class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/CorrectAnswers-BMzYvD5t.svg"></img>
+                </div>
+                <div class="demo-statBox">
+                    <div class="demo-statTitle">Games Played</div>
+                    <div id="gamesPlayed" class="demo-statValue">46</div>
+                    <img class="demo-statImg" src="https://ac.blooket.com/dashclassic/assets/GamesPlayed-ChTFMXFQ.svg"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
