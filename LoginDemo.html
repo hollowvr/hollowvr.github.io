@@ -7,10 +7,10 @@
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('returnData') !== null) {
+            if (urlParams.get('userData') !== null) {
                 document.getElementById('demo-stage1').style.display = 'none';
                 document.getElementById('demo-stage2').style.display = 'initial';
-                const returnData = JSON.parse(urlParams.get('returnData'));
+                const returnData = JSON.parse(urlParams.get('userData'));
                 document.getElementById('icon').src = returnData.icon;
                 document.getElementById('username').textContent = returnData.username;
                 document.getElementById('totalTokens').innerText = returnData.totalTokens;
