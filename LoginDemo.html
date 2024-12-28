@@ -8,7 +8,7 @@
         window.addEventListener('DOMContentLoaded', function() {
             const cookie = getCookie('demo-session');
             if (cookie) {
-                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html&fireid='+cookie;
+                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html;
             }
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('userData') !== null) {
@@ -23,7 +23,7 @@
                 document.getElementById('playersDefeated').innerText = returnData.playersDefeated;
                 document.getElementById('correctAnswers').innerText = returnData.correctAnswers;
                 document.getElementById('gamesPlayed').innerText = returnData.gamesPlayed;
-                setCookie('demo-session', returnData.fireid, 4);
+                setCookie('demo-session', 'true', 4);
             }
             const baseUrl = window.location.pathname;
             window.history.replaceState(null, '', baseUrl);
