@@ -6,10 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Titan+One&display=swap" rel="stylesheet">
     <script>
         window.addEventListener('DOMContentLoaded', function() {
-            const cookie = getCookie('demo-session');
-            if (cookie) {
-                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html';
-            }
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('userData') !== null) {
                 document.getElementById('demo-stage1').style.display = 'none';
@@ -26,6 +22,8 @@
                 if (!getCookie('demo-session')) {
                     setCookie('demo-session', 'true', 4);
                 }
+            } else if (getCookie('demo-session')) {
+                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html';
             }
             const baseUrl = window.location.pathname;
             window.history.replaceState(null, '', baseUrl);
