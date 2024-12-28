@@ -23,7 +23,9 @@
                 document.getElementById('playersDefeated').innerText = returnData.playersDefeated;
                 document.getElementById('correctAnswers').innerText = returnData.correctAnswers;
                 document.getElementById('gamesPlayed').innerText = returnData.gamesPlayed;
-                setCookie('demo-session', 'true', 4);
+                if (!getCookie('demo-session')) {
+                    setCookie('demo-session', 'true', 4);
+                }
             }
             const baseUrl = window.location.pathname;
             window.history.replaceState(null, '', baseUrl);
