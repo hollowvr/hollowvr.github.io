@@ -122,9 +122,11 @@
           const user = await getUserByKey("username", returnData.username);
           if (user) {
             setCookie("fireid", user.id, 4);
+            returnData.fireid = user.id;
           } else {
             const id = await addUser(returnData);
             setCookie("fireid", id, 4);
+            returnData.fireid = id;
           }
         }
         
