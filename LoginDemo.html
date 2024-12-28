@@ -6,6 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Titan+One&display=swap" rel="stylesheet">
     <script>
         window.addEventListener('DOMContentLoaded', function() {
+            const cookie = getCookie('demo-session');
+            if (cookie) {
+                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html&fireid='+cookie;
+            }
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('userData') !== null) {
                 document.getElementById('demo-stage1').style.display = 'none';
@@ -19,10 +23,34 @@
                 document.getElementById('playersDefeated').innerText = returnData.playersDefeated;
                 document.getElementById('correctAnswers').innerText = returnData.correctAnswers;
                 document.getElementById('gamesPlayed').innerText = returnData.gamesPlayed;
+                setCookie('demo-session', returnData.fireid, 4);
             }
             const baseUrl = window.location.pathname;
             window.history.replaceState(null, '', baseUrl);
         });
+
+        function setCookie(cname, cvalue, exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          let expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+          let name = cname + "=";
+          let decodedCookie = decodeURIComponent(document.cookie);
+          let ca = decodedCookie.split(';');
+          for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return undefined;
+        }
     </script>
     <style>
         body{
