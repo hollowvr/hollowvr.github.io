@@ -8,7 +8,7 @@
         window.addEventListener('DOMContentLoaded', function() {
             const cookie = getCookie('demo-session');
             if (cookie) {
-                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html;
+                window.location.href = 'https://hollowvr.github.io/BlooketAuthorizer.html?redirectUrl=https://hollowvr.github.io/LoginDemo.html';
             }
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('userData') !== null) {
