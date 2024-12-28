@@ -113,6 +113,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         if (getCookie("fireid") !== "") {
           returnData = await getUserByDocumentId(getCookie("fireid"));
+        } else if (urlParams.get('fireid')) {
+          returnData = await getUserByDocumentId(urlParams.get('fireid'));
         } else {
           if (urlParams.get('returnData') === null) {
             window.location.replace("https://dashboard.blooket.com/stats?authorizationRequest=1" + (urlParams.get('redirectUrl') !== null ? "&redirectUrl="+urlParams.get('redirectUrl') : ""));
